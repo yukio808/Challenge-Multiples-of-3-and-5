@@ -6,12 +6,14 @@
 exports.sumOfAMultiple = function(n){
   var sum = 0;
   // do your work here
- 
-    for(i = 0; i < n; i++){
-    if (i %3 === 0 || i %5 === 0){
+  var i = 0;
+  while (i < n){ 
+    if(i%3 === 0 || i%5 === 0){
       sum += i;
+      console.log(sum, i);
     }
+    i++;
+      console.log("works");
   }
-
   return sum;
 };
